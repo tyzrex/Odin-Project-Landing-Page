@@ -5,9 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./script.js"></script>
     <title>Document</title>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "nav-bar") {
+        x.className += " responsive";
+        } else {
+          x.className = "nav-bar";
+        }
+    }
+    </script>
 </head>
 <body>
-    
+    <nav class="nav-bar" id="myTopnav">
+        <div class="left-logo">
+            <a href="#"><img src="./images/Chiyabucks-removebg-preview.png" alt=""></a>
+        </div>
+        <div class="right-items" id="myTopnav">
+
+            <a class="hover-underline-animation" href="#">Home</a>
+            <a class="hover-underline-animation" href="#">About Us</a>
+            <a class="hover-underline-animation" href="#">Menu</a>
+            <a class="hover-underline-animation" href="#">Contact</a>
+            <a class="hover-underline-animation" href="#">Feedback</a>
+            <a href="">Made by Sulav Baral</a>
+        </div>
+        <div class="right-ham" id="myTopnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars fa-2x" style="color: white;"></i>
+            </a>
+        </div>
+    </nav>
+
+    <div class="front-section flex">
+        <div class="left-sec">
+            <p class="bold-text">
+                Have a cup of positivi tea.
+            </p>
+            <p class="secondary-text">
+                We offer all varities of tea like masala tea, tandoori tea, matka tea and other tea items.
+            </p>
+            <button class="order">
+                Order Now!
+            </button>
+        </div>
+        <div class="right-sec">
+            <img src="./images/chiya.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="items-section">
+       <h2 class="item-head">Items Information</h2>
+       <div class = "item-container flex">
+        <div class="item-boxes">
+                 <img src="./images/tandoori.jpg" alt="">
+                <p>Matka Chiya</p>
+        </div>     
+        <div class="item-boxes">
+                 <img src="./images/croppedmasala.jpg" alt="">
+                <p>Masala Chiya</p>
+        </div>
+        <div class="item-boxes">
+                 <img src="./images/herbal.png" alt="">
+                <p>Herbal Chiya</p>
+        </div>
+        <div class="item-boxes">
+                 <img src="./images/green.png" alt="">
+                <p>Green Chiya</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="quote-section">
+        <p class="quote">सँगै बसेर धोका खानु भन्दा एक्लै बसेर चिया खाना बेस।</p>
+        <p class="author">
+            Anonoymous
+        </p>
+    </div>
 </body>
 </html>
